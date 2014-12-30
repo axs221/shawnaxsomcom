@@ -3,14 +3,14 @@
 <head>
     <style type="text/css">
     body {
-        background: linear-gradient(#333, #557) !important;
+        background: linear-gradient(#111, #222) !important;
         color: white !important;
     }
     #main-container {
         position: absolute;
-        background: linear-gradient(#444, #669);
+        background: linear-gradient(#222, #333);
         width: 85%;
-        height: 100%;
+        height: 1000px;
         margin: 0 100px 0 100px;
     }
     hr {
@@ -53,10 +53,10 @@
         padding: 4px;
         margin: 10px;
         border-radius: .4em;
-        height: 70%;
+        height: 450px;
     }
     .content-box {
-        background: #000;
+        background: #101310;
         border-radius: .4em;
         padding: 8px;
         height: 100%;
@@ -70,6 +70,31 @@
         top: 115px;
         left: 250px;
         width: 600px;
+        background: #555;
+        border-radius: .5em;
+    }
+    #resume-container div {
+        border-radius: .5em;
+        margin: 3px;
+        padding: 6px;
+        background: white !important;
+        color: #333 !important;
+        white-space: pre-wrap;
+        /* css-3 */
+        
+        white-space: -moz-pre-wrap;
+        /* Mozilla, since 1999 */
+        
+        white-space: -pre-wrap;
+        /* Opera 4-6 */
+        
+        white-space: -o-pre-wrap;
+        /* Opera 7 */
+        
+        word-wrap: break-word;
+        /* Internet Explorer 5.5+ */
+        
+        word-break: break-word !important;
     }
     #profile-container {
         border: thick solid black;
@@ -81,20 +106,15 @@
         line-height: 3em;
         height: 100%;
     }
-     pre {
-        margin: 50px;
-        background: black !important;
-        color: #ddd !important;
-         white-space: pre-wrap;       /* css-3 */
- white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
- white-space: -pre-wrap;      /* Opera 4-6 */
- white-space: -o-pre-wrap;    /* Opera 7 */
- word-wrap: break-word;       /* Internet Explorer 5.5+ */
- word-break: break-word !important;
-    }
     td {
         padding: 15px 5px 15px 5px !important;
         vertical-align: top;
+    }
+    h5 {
+        line-height: 200% !important;
+    }
+    em {
+        color: #999;
     }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -108,77 +128,44 @@
         </nav>
 
         <div id="resume-container">
-        <pre>
-Shawn Axsom
-Software Engineer       C#, JavaScript
-4240 Springwood Trail           Shawn.Axsom@gmail.com 
-Indianapolis, Indiana 46228 812.797.8840
-SKILLS  
-EXCEPTIONAL:        
-C# | .NET Framework | Design Patterns | Agile Development
-
-PROFICIENT: 
-JavaScript | AngularJS | Node.js | MongoDB | jQuery | REST 
-| SOAP | Perforce | Git | UML | ERD | Microsoft SQL Server | WPF | Linux | Python | Amazon Web Services
-
-KNOWLEDGEABLE:  
-Scrum | Agile | Leadership | TDD | Unit Testing | Continuous Integration 
-| CRM Systems | Telephony | Call Centers | Lync | Salesforce.com
-    
-EXPERIENCE  
-Interactive Intelligence                                                                                                           Indianapolis, Indiana | March 2014 – present
-Team Lead, Software Engineer – Integrations Team
+            <div>
+<b>EXPERIENCE</b>
+<b>Interactive Intelligence</b>
+<b>Team Lead, Software Engineer</b>
+<b><em>Indianapolis, Indiana, March 2014 - present</em></b>
 Lead of 9 employees and contractors, and project lead of Workforce Management Integration with third party vendors.
-*   Developed Workforce Management integration, allowing full customization of statistical calculations via JavaScript and consisting of reusable architecture.
-*   Developed solution to route Salesforce.com tickets to appropriate agents, including using MSMQ to improve service resiliency.
-*   Created team calendar and scheduling web application with JavaScript, AngularJS, Node.js, and MongoDB. Integrates to JIRA and Outlook, allowing scheduling work for recurring events.
-*   Interview candidates for open positions within current team. 
-*   Implemented grass-roots mentorship program option for 400+ developers. Attend all new hire onboarding and education meetings to represent the development department. 
 
-Interactive Intelligence                                                                                                      Indianapolis, Indiana | July 2011 – March 2014
-Software Engineer – Integrations Team
+<b>Interactive Intelligence</b>
+<b>Software Engineer</b>
+<b><em>Indianapolis, Indiana, July 2011 - March 2014</em></b>
 Lead developer on integrations with Microsoft Lync, and engineered a new plug-in architecture and created plug-ins for CRM integrations.
-*   Managed development of integrations with Microsoft Lync. Created bi-direction, multi-threaded service to synchronize user status across systems.
-*   Developed plug-in architecture for future integrations, providing a framework for standardized configuration, web service support, and to enable cloud capabilities.
-*   Engineered configuration service following Bridge pattern, using reflection to populate plug-in configuration data dynamically with minimal knowledge by consumers.
-*   Created API web service for REST and SOAP that allows consumers to access customer information, account, and case information in Salesforce.com and similar CRMs.
-*   Crafted a virtual machine deployment application to speed up developer’s workflows by lowering time to deploy custom binaries in a test environment.
-*   Participated in technical phone interviewing committee, conducting over 60 interviews.
-*   Participated in a fully agile environment, practicing Scrum in one of the only agile groups in the company.
-*   Mentored new developers through the iBud program.
-*   Hosted weekly technical presentations.
 
-Intus Technologies   Indianapolis, Indiana | March 2010 – July 2011
-C#.NET Developer
+<b>Intus Technologies</b>
+<b>C#.NET Developer</b>
+<b><em>Indianapolis, Indiana, March 2010 - July 2011</em></b>
 One of two core developers that converted main product from Access VBA to C#.NET and SQL Server. Lead developer of $100,000 project with a California bar association.
-*   Conceptualized a system to create dynamic automatic emails, only requiring a simple SQL Server function for new template types.
-*   Reused dynamic automatic email system to create ability to send virtually any report in the application with a simple XML specification.
-*   Crafted and inspired new code generation programs for the creation of standard SQL Server stored procedures and C# business classes, drastically reducing new development time.
-*   Reengineered a month-end accounting posting process, utilizing Excel PivotTables to reconcile and export invoices, cash receipts, and refunds.
-*   Devised an elegant Excel project tracking system, praised by clients and adopted for other core projects.
 
-Information Systems Experts, Inc.               Carmel, Indiana | June 2008 – March 2010 
-ERP Consultant, BPCS
+<b>Information Systems Experts, Inc.</b>
+<b>ERP Consultant, BPCS</b>
+<b><em>Carmel, Indiana, June 2008 - March 2010 </em></b>
 Consultant developer for the BPCS manufacturing ERP system, and manager of all aspects of employment for four programmers. Updated clients in daily meetings.
-*   Oversaw ERP website integration project to process customer purchases and returns.
-*   Created internal billing system using ASP.NET for time entry and invoicing our clients.
 
-Tree Management Systems            Ellettsville, Indiana | MAY 2006 – JUNE 2008 
-Lead Software Developer
+<b>Tree Management Systems</b>
+<b>Lead Software Developer</b>
+<b><em>Ellettsville, Indiana, May 2006 - June 2008 </em></b>
 Lead developer and technical support representative for tree management package, phone call tracker, and appointment scheduler.
-*   Developed an application to optimize routing paths of scheduled work crews, utilizing the Microsoft MapPoint API.
-*   Integrated software with the QuickBooks accounting system to export invoices, payments, and journal entries automatically.
-*   Supported and enhanced tree crew management software in VBA for Access, and rewrote portions of the software in C#.NET.
 
 
 EDUCATION
-Indiana University, Kelley School of Business                                                              Bloomington, Indiana | May 2008
+Indiana University, Kelley School of Business
+Bloomington, Indiana, May 2008
 Masters of Science in Information Systems
 
-Indiana University, Kelley School of Business                Bloomington, Indiana | July 2007
+Indiana University, Kelley School of Business
+Bloomington, Indiana, July 2007
 Bachelors of Science in Business, Concentration in Information Systems
 
-</pre>
+</div>
 
 
         </div>
@@ -186,23 +173,9 @@ Bachelors of Science in Business, Concentration in Information Systems
         <div id="profile-container" class="content-box">
             <img src="./img/portrait_resized.jpg" id="portrait">
 
-            <table>
-                <tr>
-                    <td><b><em>Name</em></b>
-                    </td>
-                    <td>Shawn Axsom</td>
-                </tr>
-                <tr>
-                    <td><b><em>Occupation</em></b>
-                    </td>
-                    <td>Software Engineer</td>
-                </tr>
-                <tr>
-                    <td><b><em>Skills</em></b>
-                    </td>
-                    <td>C#, .NET, REST, SOAP, JavaScript, AngularJS, Node.js, Backbone.js, Python, Django</td>
-                </tr>
-            </table>
+            <h2>Shawn Axsom</h2>
+            <h3>Software Engineer</h3>
+            <h5>C#, .NET, REST, SOAP, JavaScript, AngularJS, Node.js, Backbone.js, Python, Django</h5>
         </div>
 
         <nav class="side">

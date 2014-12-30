@@ -1,8 +1,90 @@
 <html>
-    <body>
-        Under construction...
-        Visit my projects I am working on:
-        <a href="http://rss.shawnaxsom.com/">RSS Reader</a>
-        <a href="http://calendar.shawnaxsom.com/">Calendar</a>
-    </body>
+
+<head>
+    <style type="text/css">
+    body {
+        background: linear-gradient(#333, #557) !important;
+        color: white !important;
+    }
+    #main-container {
+        position: absolute;
+        background: linear-gradient(#444, #669);
+        width: 85%;
+        height: 100%;
+        margin: 0 100px 0 100px;
+    }
+    hr {
+        border-color: #334 !important;
+        height: 1px;
+        border: 0;
+    }
+    a:link {
+        color: #57d;
+    }
+    a:visited {
+        color: #57d;
+    }
+    a:hover {
+        color: #57d;
+    }
+    a:active {
+        color: #57d;
+    }
+    nav {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 200px;
+        background: linear-gradient(#222, #334);
+        padding: 4px;
+        margin: 10px;
+        border-radius: .4em;
+        height: 70%;
+    }
+    nav .content-box {
+        background: #000;
+        border-radius: .4em;
+        padding: 8px;
+        height: 100%;
+    }
+    .content-box p {
+        color: #aaa;
+        font-size: 11pt;
+    }
+    #portrait {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    </style>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="main-container">
+        <img src="./img/portrait_resized.jpg" id="portrait">
+
+        <nav>
+            <div class="content-box">
+                Current Projects:
+                <hr/>
+                <div>
+                    <a href="http://rss.shawnaxsom.com/">RSS Reader</a>
+                    <p>
+                        A news reader. Currently uses Local Storage for saving feeds, but implementing MongoDB storage is in progress. Built on <b>Backbone.js</b> and <b>Django</b>.
+                    </p>
+                </div>
+                <div>
+                    <a href="http://calendar.shawnaxsom.com/">Calendar</a>
+                    <p>
+                        A hand-coded monthly calendar that integrates with Atlassian JIRA and Microsoft Outlook. Built on AngularJS, Node.js, Express.js, Moment.js, and MongoDB.
+                    </p>
+                </div>
+            </div>
+        </nav>
+    </div>
+</body>
+
 </html>

@@ -30,18 +30,32 @@
     a:active {
         color: #57d;
     }
-    nav {
+    div.top {
+        position: absolute;
+        top: 20px;
+        background: #e02;
+        height: 50px;
+        width: 100%;
+    }
+    nav.top {
         position: absolute;
         top: 40px;
-        left: 40px;
+        background: red;
+        height: 50px;
+        width: 100%;
+    }
+    nav.side {
+        position: absolute;
+        top: 100px;
+        left: 10px;
         width: 200px;
-        background: linear-gradient(#222, #334);
+        background: #d02;
         padding: 4px;
         margin: 10px;
         border-radius: .4em;
         height: 70%;
     }
-    nav .content-box {
+    .content-box {
         background: #000;
         border-radius: .4em;
         padding: 8px;
@@ -51,22 +65,55 @@
         color: #aaa;
         font-size: 11pt;
     }
-    #portrait {
+    #profile-container {
+        border: thick solid black;
         position: absolute;
         top: 30px;
         right: 30px;
-        width: 200px;
+        width: 250px;
         height: 200px;
+        line-height: 3em;
+        height: 100%;
+    }
+    td {
+        padding: 15px 5px 15px 5px !important;
+        vertical-align: top;
     }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
 </head>
 
 <body>
+    <div class="top">
+    </div>
     <div id="main-container">
-        <img src="./img/portrait_resized.jpg" id="portrait">
+        <nav class="top">
+        </nav>
 
-        <nav>
+        <div id="profile-container" class="content-box">
+            <img src="./img/portrait_resized.jpg" id="portrait">
+
+
+            <table>
+                <tr>
+                    <td><b><em>Name</em></b>
+                    </td>
+                    <td>Shawn Axsom</td>
+                </tr>
+                <tr>
+                    <td><b><em>Occupation</em></b>
+                    </td>
+                    <td>Software Engineer</td>
+                </tr>
+                <tr>
+                    <td><b><em>Skills</em></b>
+                    </td>
+                    <td>C#, .NET, REST, SOAP, JavaScript, AngularJS, Node.js, Backbone.js, Python, Django</td>
+                </tr>
+            </table>
+        </div>
+
+        <nav class="side">
             <div class="content-box">
                 Current Projects:
                 <hr/>

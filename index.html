@@ -50,25 +50,40 @@
         left: 10px;
         width: 200px;
         background: #d02;
-        padding: 4px;
+        padding: 2px;
         margin: 10px;
         border-radius: .4em;
         height: 450px;
     }
     .content-box {
-        background: #101310;
+        background: linear-gradient(to right, black, #1a1a1a, #1a1a1a, #1a1a1a, black);
         border-radius: .4em;
-        padding: 8px;
         height: 100%;
     }
     .content-box p {
         color: #aaa;
         font-size: 11pt;
     }
+    .content-box .box-heading {
+        position: relative;
+        background: linear-gradient(black, #1a1a1a, #1a1a1a, #1a1a1a, black);
+        background: red;
+        margin: 0 0 5px 0 !important;
+        text-align: center;
+    }
+    nav .content-box .box-heading {
+        height: 30px;
+        padding: 5px 0 0 0 !important;
+    }
+
+    .box-body {
+        margin: 10px;
+    }
+
     #resume-container {
         position: absolute;
         top: 115px;
-        left: 250px;
+        left: 240px;
         width: 600px;
         background: #555;
         border-radius: .5em;
@@ -97,24 +112,43 @@
         word-break: break-word !important;
     }
     #profile-container {
-        border: thick solid black;
+        border: thin solid #501;
         position: absolute;
-        top: 30px;
+        top: 115px;
         right: 30px;
         width: 250px;
-        height: 200px;
+        height: 450px;
         line-height: 3em;
-        height: 100%;
+        background: #1f2021;
+    }
+    #profile-container img {
+        position: relative;
+        border-radius: 1em;
+        border: thin solid #600;
+        left: 22px;
+        margin-top: 15px;
     }
     td {
         padding: 15px 5px 15px 5px !important;
         vertical-align: top;
     }
-    h5 {
+    #profile-container h3, #profile-container h4 {
+        margin: 15px 15px;
+    }
+    #profile-container h5 {
         line-height: 200% !important;
+        color: #aaa;
+        font-weight: normal;
+        font-style: italic;
+        margin: 15px 25px;
     }
     em {
         color: #999;
+    }
+
+    .github {
+        background: white;
+        width: 35px;
     }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -173,22 +207,25 @@ Bachelors of Science in Business, Concentration in Information Systems
         <div id="profile-container" class="content-box">
             <img src="./img/portrait_resized.jpg" id="portrait">
 
-            <h2>Shawn Axsom</h2>
-            <h3>Software Engineer</h3>
+            <h3>Shawn Axsom</h3>
+            <h4>Software Engineer</h4>
             <h5>C#, .NET, REST, SOAP, JavaScript, AngularJS, Node.js, Backbone.js, Python, Django</h5>
         </div>
 
         <nav class="side">
             <div class="content-box">
-                Current Projects:
-                <hr/>
-                <div>
+                <div class="box-heading">
+                    Current Projects
+                </div>
+                <div class="box-body">
                     <a href="http://rss.shawnaxsom.com/">RSS Reader</a>
+                    <img src="./img/Github_logo.png" class="github">
                     <p>
                         A news reader. Currently uses Local Storage for saving feeds, but implementing MongoDB storage is in progress. Built on <b>Backbone.js</b> and <b>Django</b>.
                     </p>
                 </div>
-                <div>
+                <br/>
+                <div class="box-body">
                     <a href="http://calendar.shawnaxsom.com/">Calendar</a>
                     <p>
                         A hand-coded monthly calendar that integrates with Atlassian JIRA and Microsoft Outlook. Built on AngularJS, Node.js, Express.js, Moment.js, and MongoDB.

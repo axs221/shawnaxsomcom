@@ -53,7 +53,7 @@
         padding: 2px;
         margin: 10px;
         border-radius: .4em;
-        height: 450px;
+        height: 500px;
     }
     nav.side b {
         color: white;
@@ -94,9 +94,9 @@
              overflow: -moz-scrollbars-vertical;
      overflow: scroll;
     }
-    #resume-container div {
+    #resume-text {
         overflow: scroll;
-        height: 450px;
+        height: 500px;
         border-radius: .5em;
         margin: 3px;
         padding: 6px;
@@ -125,11 +125,11 @@
         top: 115px;
         right: 30px;
         width: 250px;
-        height: 450px;
+        height: 500px;
         line-height: 3em;
         background: #1f2021;
     }
-    #profile-container img {
+    #portrait {
         position: relative;
         border-radius: 1em;
         border: thin solid #600;
@@ -154,6 +154,18 @@
     em {
         color: #999;
     }
+    #view-resume {
+        position: absolute;
+        top:25px;
+        right: 25px;
+        background: linear-gradient(#454, #111, #222, #344);
+        border: 2px solid #77f;
+        border-radius: .3em;
+        margin-left: 10px;
+        padding: 8px;
+        font-weight: bold;
+        font-size: large;
+    }
     .github {
         position: absolute;
         right: 50px;
@@ -162,6 +174,15 @@
         border: thin solid #77f;
         border-radius: .3em;
         margin-left: 10px;
+    }
+    .linkedin {
+        position: absolute;
+        left: 50px;
+        margin-top: 30px;
+        background: #dadada;
+        border: thin solid #77f;
+        border-radius: .3em;
+        padding: 5px;
     }
     </style>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
@@ -175,7 +196,12 @@
         </nav>
 
         <div id="resume-container">
-            <div>
+            <a href="resume.pdf">
+                <div id="view-resume">
+                    View Resume
+                </div>
+            </a>
+            <div id="resume-text">
 <b>EXPERIENCE</b>
 <b>Interactive Intelligence</b>
 <b>Team Lead, Software Engineer</b>
@@ -218,6 +244,11 @@ Bachelors of Science in Business, Computer Information Systems
             <h3>Shawn Axsom</h3>
             <h4>Software Engineer</h4>
             <h5>C#, .NET, REST, SOAP, JavaScript, AngularJS, Node.js, Backbone.js, Python, Django</h5>
+            <div>
+                <a class="linkedin" href="https://www.linkedin.com/pub/shawn-axsom/3/207/471">
+                    <img src="https://static.licdn.com/scds/common/u/img/logos/logo_132x32_2.png">
+                </a>
+            </div>
         </div>
 
         <nav class="side">
@@ -232,7 +263,7 @@ Bachelors of Science in Business, Computer Information Systems
                     <p>
                         A news reader, capable of adding feeds to Local Storage and identifying common words as tags.
                     </p>
-                    <p><b>Backbone.js</b>, <b>Underscore.js</b>, <b>Jquery</b>, and <b>Django</b>.
+                    <p><b>Backbone.js</b>, <b>Underscore.js</b>, <b>jQuery</b>, and <b>Django</b>.
                     </p>
                 </div>
                 <br/>
